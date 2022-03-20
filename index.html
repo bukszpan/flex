@@ -1,39 +1,67 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
-.grid-container {
-  display: grid;
-  gap: 0px 0px;
-  grid-template-columns: auto auto auto auto;
-  background-color: pink;
-  padding: 10px;
+.flex-container {
+  display: flex;
+ flex-wrap: wrap;
+  align-items: center;
+  background-color: DodgerBlue;
+  justify-content: center;
 }
 
-.grid-item {
-  background-color: green;
-  border: 1px solid yellow;
-  padding: 0px;
-  font-size: 30px;
+
+.flex-container > div {
+font-size: 20px;
+ 
+  margin: 0px;
   text-align: center;
+
 }
 </style>
 </head>
 <body>
 
+<h1>The align-items Property</h1>
+
+<p>The "align-items: center;" aligns the flex items in the middle of the container:</p>
+<div class="flex-container">
+   
+  <div>
+   <figure>
+   <img src="https://bukszpan.github.io/Crocus_1_2.jpg" alt="krokus" height="200" caption="krokus">
+   <figcaption>krokus</figcaption>
+   </figure>
+   </div> 
 
 
-<div class="grid-container">
-  <div class="grid-item">1</div>
-  <div class="grid-item">2</div>
-  <div class="grid-item"><a href="https://pl.wikipedia.org/wiki/Szafran" target="_blank"><img src="https://bukszpan.github.io/Adonis_vernalis_01.jpg" alt="krokus" height="200"></a></div>  
-  <div class="grid-item">4</div>
-  <div class="grid-item">5</div>
-  <div class="grid-item">6</div>  
-  <div class="grid-item">7</div>
-  <div class="grid-item">8</div> 
-</div>
+  
+ <div>
+   <figure>
+   <img src="https://bukszpan.github.io/Crocus_1_2.jpg" alt="krokus" height="200" caption="krokus">
+   <figcaption>krokus</figcaption>
+   </figure>
+  </div> 
+  <div>
+   <figure>
+   <img src="https://bukszpan.github.io/Crocus_1_2.jpg" alt="krokus" height="200" caption="krokus">
+   <figcaption>krokus</figcaption>
+   </figure>
+  </div> 
+  <div>
+   <figure>
+   <img src="https://bukszpan.github.io/Crocus_1_2.jpg" alt="krokus" height="200" caption="krokus">
+   <figcaption>krokus</figcaption>
+   </figure>
+  </div> 
+  
+  </div>
+
+
+
+
+
+
 
 </body>
 </html>
